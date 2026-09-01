@@ -1,0 +1,40 @@
+Skill,MissingEmployeeCount,Severity
+Excel,248,HIGH
+Communication,220,HIGH
+Salesforce,173,HIGH
+Data Analysis,161,HIGH
+Lead Generation,143,HIGH
+Python,143,HIGH
+Negotiation,139,HIGH
+Machine Learning,135,HIGH
+CRM Software,134,HIGH
+Data Entry,124,HIGH
+Statistics,119,HIGH
+R,115,HIGH
+Lab Equipment,112,HIGH
+Quality Control,111,HIGH
+Lab Safety,105,HIGH
+Sample Preparation,103,HIGH
+Budgeting,92,MEDIUM
+Customer Service,76,MEDIUM
+Leadership,74,MEDIUM
+ERP,68,MEDIUM
+EMR Software,67,MEDIUM
+Operations Management,64,MEDIUM
+Lean Six Sigma,62,MEDIUM
+Supply Chain,58,MEDIUM
+Patient Care,56,MEDIUM
+Medical Records,56,MEDIUM
+Strategic Planning,54,MEDIUM
+Performance Management,50,MEDIUM
+Project Management,42,LOW
+Cold Calling,39,LOW
+CRM,36,LOW
+R&D Strategy,34,LOW
+Grant Writing,28,LOW
+Compliance,28,LOW
+Employee Relations,25,LOW
+Recruiting,21,LOW
+Workday,20,LOW
+Payroll,18,LOW
+HRIS,18,LOW
