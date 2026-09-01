@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.api import attrition, dashboard, skills
+from app.api import attrition, dashboard, skills, chat
 from app.utils.logger import logger
 
 app = FastAPI(
     title="Enterprise HR AI Platform API",
-    description="Backend API for Attrition Prediction, Workforce Engagement, Skill Gap Analysis & AI Upskilling Recommendations.",
-    version="1.0.0"
+    description="Backend API for Attrition Prediction, Workforce Engagement, Skill Gap Analysis, RAG HR Chatbot & AI Upskilling Recommendations.",
+    version="1.1.0"
 )
 
 app.add_middleware(
@@ -20,12 +20,13 @@ app.add_middleware(
 app.include_router(attrition.router)
 app.include_router(dashboard.router)
 app.include_router(skills.router)
+app.include_router(chat.router)
 
 @app.on_event("startup")
 def startup_event():
     logger.info("==================================================")
-    logger.info("Enterprise HR AI FastAPI Service Starting Up")
-    logger.info("Ready to serve predictions and dashboard analytics")
+    logger.info("Enterprise HR AI FastAPI Service Starting Up (v1.1.0)")
+    logger.info("RAG Engine & Analytics API Ready")
     logger.info("==================================================")
 
 @app.get("/", tags=["Health Check"])
@@ -33,6 +34,6 @@ def root():
     return {
         "status": "online",
         "service": "Enterprise HR AI Platform API",
-        "version": "1.0.0",
+        "version": "1.1.0",
         "docs_url": "/docs"
     }
