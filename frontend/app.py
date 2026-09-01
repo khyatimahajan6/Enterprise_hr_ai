@@ -279,6 +279,12 @@ with tab_matrix:
         fig_quad.add_hline(y=80, line_dash="dash", line_color="#64748b")
         fig_quad.update_layout(**PLOTLY_LAYOUT)
         st.plotly_chart(fig_quad, use_container_width=True)
+    else:
+        st.info(
+            "This matrix needs a real performance-rating column to be meaningful. "
+            "Wire one in from your HRIS, or set SHOW_SYNTHETIC_PERF=true to preview "
+            "the layout with clearly-labeled placeholder data."
+        )
 
 # Tab 3: Skill Gaps & Department Skill Matrix Heatmap
 with tab_skills:
